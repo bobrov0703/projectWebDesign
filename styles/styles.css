@@ -1,0 +1,20 @@
+/* 
+style sheet 
+ver 0.1
+*/
+
+
+/* pc styles min width 1080px; */
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.wrapper{
+    width: 80%;
+    min-height: 100%;
+}
