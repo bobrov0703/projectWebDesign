@@ -1,35 +1,81 @@
 /* 
 style sheet 
 ver 0.1
+
+color palitra:
+
+red - #CD0606
+dirty white - #F7F7F7
+dark grey - #222222
+light grey 1 - #DADADA
+light grey 2 - #979797;
+light grey 3 - #E6E6E6;
+blue - #1875F0;
+white - #FFFFFF;
+
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.abel-regular {
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /* pc styles min width 1080px; */
+
+[class] {
+    display: flex;
+}
+
 body{
-    width: 100vw;
-    max-width: 100vw;
     display: flex;
     margin: 0;
     padding: 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 50px;
-    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
+    height: 161px;
+}
+
+.header{
+    width: calc(100% - 44px);
+    min-height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px 0 22px;
+}
+
+.header > span{
+    font-size: 64px;
+    font-weight: 700;
+    color: #CD0606;
+}
+
+.header > svg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 0;
+    font-size: 24px;
 }
 
 menu > ul{
@@ -37,7 +83,7 @@ menu > ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -46,7 +92,7 @@ menu > ul{
 
 menu ul li a{
     background: none;
-    color: black;
+    color: #76767A;
     text-decoration: none;
 }
 
@@ -54,15 +100,56 @@ a:hover{
     color: #30C5FF;
 }
 
+.loginBox > a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    color: #999999;
+    font-family: Abel;
+    text-decoration-skip-ink: none;
+
+}
+
+.loginBox > a > span{
+    margin-left: 23px;
+}
+
+.search{
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+}
+
+.search input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #76767A;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.search svg{
+    height: 25px;
+    margin-left: -40px;
+}
+
 .main{
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 50px - 138px);
+    width: 100%;
     margin: 0;
     padding: 0;
+    background-image: url(../img/output-onlinepngtools.png) ;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .wrapper{
+    z-index: 3;
     margin: 0;
     padding: 0;
 }
