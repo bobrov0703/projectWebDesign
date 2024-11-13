@@ -42,6 +42,7 @@ body{
     display: flex;
     margin: 0;
     padding: 0;
+    width: calc(100vw - 17px);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -592,4 +593,65 @@ footer > p{
     line-height: 20.39px;
     letter-spacing: 0.4000000059604645px;
     color: #ffffff;
+}
+
+.menuArticles{
+    width: 100%;
+    margin: -60px 0 35px 0;
+    height: 24px;
+    justify-content: center;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.menuArticles > ul {
+    width: 643px;
+    height: 24px;
+}
+
+.articleItemBlock{
+    background: #ffffff;
+    flex-direction: column;
+    width: 875px;
+    height: 275px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 0 0 27px 0;
+}
+
+.contentArticleTitle{
+    font-family: Abel;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #222222;
+}
+
+.contentArticleItemText{
+    color: #222222;
+}
+
+.articleButton{
+    background: #333333;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF
+}
+
+.articleImg > img{
+    min-width: 300px;
+    height: 212px;
+    border-radius: 25px;
+    margin: 5px 40px 0 27px;
+}
+
+.articleBoxItem{
+    justify-content: space-between;
+    margin: 0 20px -10px 0;
+}
+
+.articleBoxItem > p{
+    font-size: 16px;
 }
