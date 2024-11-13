@@ -28,9 +28,14 @@ p{
     margin: 0;
 }
 
-button, a{
+button{
+    display: block !important;
     cursor: pointer;
     padding: 0;
+}
+
+a{
+    cursor: pointer;
 }
 
 body{
@@ -220,7 +225,6 @@ main{
 }
 
 .learnMoreButton{
-    display: block;
     width: 142px;
     height: 39px;
     border: 1px 0px 0px 0px;
@@ -322,7 +326,6 @@ main{
 
 .readMoreButton{
     flex-grow: 1;
-    display: block;
     width: 100px;
     max-height: 30px;
     border-radius: 8px;
@@ -388,7 +391,6 @@ main{
 }
 
 .buttonViewAll{
-    display: block;
     align-self: flex-end;
     margin: 20px 0 0 0;
     width: 100px;
@@ -448,7 +450,6 @@ main{
 }
 
 .subscribeButton{
-    display: block;
     padding: 0;
     width: 280px;
     height: 63px;
@@ -532,13 +533,63 @@ footer > p{
     justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 3px 10px 0px #00000014;
+    margin: 0 0 80px 0;
 }
 
 .logInConteiner > h3{
-    font-family: Abel;
+    margin: 40px 0 25px 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
     text-decoration-skip-ink: none;
+}
+
+.logInConteiner > input{
+    width: 320px;
+    height: 50px;
+    border-radius: 2px;
+    color: #A0A0A2;
+    border: 2px solid #EDF0F2;
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+}
+
+.resetContainer{
+    justify-content: space-between;
+    width: 360px;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.checkboxContainer{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.resetContainer > a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33.97px;
+    text-align: right;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1875F0;
+}
+
+.loginButton{
+    width: 360px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    background: #1875F0;
+    font-family: Abel;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.39px;
+    letter-spacing: 0.4000000059604645px;
+    color: #ffffff;
 }
