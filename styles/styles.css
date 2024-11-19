@@ -1,4 +1,4 @@
-/* 
+    /* 
 style sheet 
 ver 0.1
 
@@ -654,4 +654,96 @@ footer > p{
 
 .articleBoxItem > p{
     font-size: 16px;
+}
+
+/* events style  */
+
+.eventBlock{
+    border-bottom: 1px solid #00000014;
+    min-height: 210px;
+}
+
+.eventBlock > img{
+    margin: -50px 30px 0 25px;
+    width: 155px;
+    height: 220px;
+    top: 254px;
+    left: 170px;
+    border-radius: 10px;
+}
+
+.eventItemBlock{
+    background: #ffffff;
+    flex-direction: column;
+    width: 875px;
+    min-height: 275px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 0 0 90px 0;
+}
+
+.eventArticleTitle{
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+.locationText{
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #33333380;
+}
+
+
+.contentEventItemText{
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.dateBlock{
+    flex-direction: column;
+    justify-content: center;
+    width: 825px;
+    height: 44px;
+    border-radius: 3px;
+    background: #F2F2F2;
+    margin: 15px 25px 15px 25px;
+}
+
+.dateBlock > tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.dateBlock > tr > td , th{
+    text-align: center;
+    width: 56px;
+}
+
+.dateBlock > tr > th {
+    font-size: 10px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.dateBlock > tr > td {
+    font-family: Abel;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
