@@ -36,6 +36,15 @@ button{
 
 a{
     cursor: pointer;
+    text-decoration: none;
+}
+
+img{
+    background: #DADADA;
+}
+
+#active{
+    color:#000000 !important;
 }
 
 body{
@@ -533,7 +542,6 @@ hr{
 }
 
 .buttonViewAll{
-    align-self: flex-end;
     margin: 20px 0 0 0;
     width: 100px;
     height:30px;
@@ -546,6 +554,10 @@ hr{
     line-height: 24px;
     color: #DADADA;
     box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.end{
+    align-self: flex-end;
 }
 
 footer{
@@ -615,8 +627,10 @@ footer > p{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    box-shadow: 0px 3px 10px 0px #00000014;
     margin: 0 0 80px 0;
+    box-shadow: 0px 3px 10px 0px #00000033;
+    border: 1px solid #EDF0F2;
+    border-radius: 6px;
 }
 
 .logInConteiner > h3{
@@ -710,16 +724,22 @@ footer > p{
     line-height: 45px;
     letter-spacing: -1px;
     color: #222222;
+    
 }
 
 .contentArticleItemText{
     color: #222222;
+    word-break: break-all;
 }
 
 .articleButton{
     background: #333333;
     color: #FFFFFF;
     border: 1px solid #FFFFFF
+}
+
+.articleImg{
+    width: 100%;
 }
 
 .articleImg > img{
@@ -732,6 +752,7 @@ footer > p{
 .articleBoxItem{
     justify-content: space-between;
     margin: 0 20px -10px 0;
+    width: 55%;
 }
 
 .articleBoxItem > p{
@@ -741,7 +762,6 @@ footer > p{
 /* events style  */
 
 .eventBlock{
-    border-bottom: 1px solid #00000014;
     min-height: 210px;
 }
 
@@ -757,6 +777,7 @@ footer > p{
 .eventItemBlock{
     background: #ffffff;
     flex-direction: column;
+    align-items: center;
     width: 875px;
     min-height: 275px;
     border-radius: 6px;
@@ -796,7 +817,6 @@ footer > p{
 .dateBlock{
     flex-direction: column;
     justify-content: center;
-    width: 825px;
     height: 44px;
     border-radius: 3px;
     background: #F2F2F2;
@@ -812,23 +832,34 @@ footer > p{
     color: #999999;
 }
 
-.dateBlock > tr {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+.eventTable{
+    justify-content: center;
+    width: 875px;
+    border-top:1px solid #00000014;
+    border-bottom: 1px solid #00000014;
 }
 
-.dateBlock > tr > td , th{
+.eventDate{
+    min-width: 100px;
+}
+
+.eventDate > tr {
+    display: flex;
+    justify-content: center;
+}
+
+.eventDate > tr > td , th{
     text-align: center;
     width: 56px;
+    margin: 0 30px 0 30px;
 }
 
-.dateBlock > tr > th {
+.eventDate > tr > th {
     font-size: 10px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
-.dateBlock > tr > td {
+.eventDate > tr > td {
     font-family: Abel;
     font-size: 13px;
     font-weight: 500;
@@ -838,3 +869,227 @@ footer > p{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
+
+.timeConntainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 22px 0 22px 0;
+}
+
+.timeBox{
+    display: flex;
+    height: 44px;
+}
+
+.timeBox > tr{
+    display: flex;
+    width: 100%;
+    height: 44px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeBox > tr > td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 44px;
+}
+
+.time{
+    border-radius: 3px;
+    border: 1px solid #00000014;
+    opacity: 0px;
+}
+
+.everyHour{
+    margin: -22px 0 22px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #33333380;
+    margin: 0 0 20px 0;
+}
+
+/* about us styles */
+
+.aboutUsAuthors{
+    position: sticky;
+    justify-content: center;
+    margin: 0 !important;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    min-height: 1150px;
+}
+
+.aboutUsAuthors > aside {
+    flex-direction: column;
+}
+
+.aboutUsAuthors > h5 {
+    align-self: center;
+    margin: 40px 0 0 0;
+}
+
+
+.aboutUsBox{
+    padding: 82px;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 164px);
+    min-height: 927px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #ffffff;
+}
+
+.aboutUsBox > img{
+    width: 540px;
+    height: 298px;
+    border-radius: 25px;
+    background: #DADADA;
+    margin: 0 0 35px 0;
+}
+
+.aboutUsArticleItemText{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justified;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* author styles */
+
+.author{
+    width: 100%;
+}
+
+.author > .aboutUsBox{
+    width: calc(100% - 330px);
+    padding: 82px 165px;
+}
+
+.author > .aboutUsBox > img{
+    width: 464px;
+    height: 378px;
+    border-radius: 25px;
+}
+
+.authorNameTitle{
+    font-family: Abel;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #CD0606;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.authorArticleName{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #CD0606;
+}
+
+.contentArticleBlock{
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.articleImgMain{
+    width: 100%;
+}
+
+.articleImgMain > img{
+    width: 380px;
+    height: 270px;
+    border-radius: 25px;
+    margin: 5px 40px 0 0;
+}
+
+.mainArticleBox{
+    width: 1284px;
+    min-height: 1141px;
+    border-radius: 25px;
+    padding: 68px 102px;
+    padding: 82px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 927px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #ffffff;
+}
+
+.mainArticleBlock{
+    background: #ffffff;
+    flex-direction: column;
+    width: 875px;
+    height: 275px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 0 0 27px 0;
+}
+
+.contentmainArticleBlock{
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.audioPlayer{
+    width: 100%;
+    border: 1px solid #1875F0;
+    border-radius: 23px;
+    color: #ffffff;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+  
+  audio::-webkit-media-controls-play-button {
+    background-color: #1875F0;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(177,212,224, .7);
+  }
+
+  audio::-webkit-media-controls-volume-slider {
+    background-color: #1875F0;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .mainArticleBoxItem{
+    max-height: 275px;
+  }
+
+  .mainText{
+    margin: 0;
+    font-size: 20px !important;
+    font-family: Abel;
+    font-weight: 400;
+    line-height: 28px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
